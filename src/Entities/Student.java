@@ -80,9 +80,33 @@ public class Student
     enrolledCourses.add( course );
   }
 
-  @Override
-  public String toString()
+  public void setId( int id )
   {
-    return "Student's name: " + name + ", Total fees paid so far: $" + feesPaid;
+    this.id = id;
+  }
+
+  public void setName( String name )
+  {
+    this.name = name;
+  }
+
+  public void setDepartment( Department department )
+  {
+    this.department = department;
+  }
+
+  public void setFeesPaid( int feesPaid )
+  {
+    this.feesPaid = feesPaid;
+  }
+
+  public void setFeesTotal( int feesTotal )
+  {
+    this.feesTotal = feesTotal;
+  }
+
+  public void setEnrolledCourses( List<Course> enrolledCourses )
+  {
+    this.enrolledCourses = enrolledCourses;
   }
 }

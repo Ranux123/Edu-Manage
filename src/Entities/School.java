@@ -8,11 +8,11 @@ public class School
   private List<Student> students;
   private List<Department> departments;
   private List<Course> courses;
-  private TimeTable timeTable;
+  private Timetable timeTable;
   private static int totalMoneyEarned = 0;
   private static int totalMoneySpent = 0;
 
-  public School( List<Teacher> teachers, List<Student> students, List<Department> departments, List<Course> courses, TimeTable timeTable )
+  public School( List<Teacher> teachers, List<Student> students, List<Department> departments, List<Course> courses, Timetable timeTable )
   {
     this.teachers = teachers;
     this.students = students;
@@ -64,12 +64,12 @@ public class School
     this.courses = courses;
   }
 
-  public TimeTable getTimeTable()
+  public Timetable getTimeTable()
   {
     return timeTable;
   }
 
-  public void setTimeTable( TimeTable timeTable )
+  public void setTimeTable( Timetable timeTable )
   {
     this.timeTable = timeTable;
   }
@@ -92,5 +92,30 @@ public class School
   public static void updateTotalMoneySpent( int moneySpent )
   {
     totalMoneySpent += moneySpent;
+  }
+
+  public void setTeachers( List<Teacher> teachers )
+  {
+    this.teachers = teachers;
+  }
+
+  public void setStudents( List<Student> students )
+  {
+    this.students = students;
+  }
+
+  public void setDepartments( List<Department> departments )
+  {
+    this.departments = departments;
+  }
+
+  public static void setTotalMoneyEarned( int totalMoneyEarned )
+  {
+    School.totalMoneyEarned = totalMoneyEarned;
+  }
+
+  public static void setTotalMoneySpent( int totalMoneySpent )
+  {
+    School.totalMoneySpent = totalMoneySpent;
   }
 }

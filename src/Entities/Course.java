@@ -1,7 +1,5 @@
 package Entities;
 
-import java.util.List;
-
 public class Course
 {
   private String courseName;
@@ -28,5 +26,20 @@ public class Course
   public Department getDepartment()
   {
     return department;
+  }
+
+  public void setCourseName( String courseName )
+  {
+    this.courseName = courseName;
+  }
+
+  public void setCourseCode( int courseCode )
+  {
+    this.courseCode = courseCode;
+  }
+
+  public void setCourseName( Department department )
+  {
+    this.department = department;
   }
 }

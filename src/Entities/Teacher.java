@@ -60,10 +60,4 @@ public class Teacher
     this.salaryEarned += salary;
     School.updateTotalMoneySpent( salary );
   }
-
-  @Override
-  public String toString()
-  {
-    return "Teacher's Name: " + teacherName + " | Total Salary Earned so far: $" + salaryEarned;
-  }
 }

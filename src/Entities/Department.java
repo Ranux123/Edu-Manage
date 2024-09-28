@@ -48,4 +48,24 @@ public class Department
   {
     this.headOfDepartment = headOfDepartment;
   }
+
+  public void setId( int id )
+  {
+    this.id = id;
+  }
+
+  public void setName( String name )
+  {
+    this.name = name;
+  }
+
+  public void setCourses( List<Course> courses )
+  {
+    this.courses = courses;
+  }
+
+  public void setStudents( List<Student> students )
+  {
+    this.students = students;
+  }
 }
